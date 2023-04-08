@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/Netflix_favicon.png" />
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-    <script type="text/javascript" src="index.js"></script>
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </head>
 <body>
     <div class="main_header">
         <div class="main_header_top">
             <img src="img/NetflixLogo.png" id="mainLogo"/>
             <div class="main_header_right">
-                <select>
-                    <option>한국어</option>
-                    <option>영어</option>
-                </select>
-                <button>로그인</button>
+                <div>
+                    <i class="fa-light fa-globe"></i>
+                    <select>
+                        <option selected="" lang="ko" label="한국어" value="ko-KR">한국어</option>
+                        <option lang="en" label="English" value="en-KR">English</option>
+                    </select>
+                </div>
+                <button onclick="location.href='/Login.html'">로그인</button>
             </div>
         </div>
         <div class="main_header_bottom">
@@ -87,36 +92,23 @@
     </div>
     <div class="faq_wrap">
         <h2>자주 묻는 질문</h2>
-        <ul class="faq_list">
-            <li>
-                <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
-                <p>+</p>
-            </li>
-            <li>
-                <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
-                <p>+</p>
-            </li>
-            <li>
-                <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
-                <p>+</p>
-            </li>
-            <li>
-                <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
-                <p>+</p>
-            </li>
-            <li>
-                <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
-                <p>+</p>
-            </li>
-            <li>
-                <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
-                <p>+</p>
-            </li>
-            <li>
-                <p>넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</p>
-                <p>+</p>
-            </li>
-        </ul>
+        <div class="accordion">
+            <div class="title">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</div>
+            <div class="content"> 언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br/> <br/>iOS, Android, Windows 10용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.</div>
+
+            <div class="title">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</div>
+            <div class="content"> 언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br/> <br/>iOS, Android, Windows 10용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.</div>
+
+            <div class="title">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</div>
+            <div class="content"> 언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br/> <br/>iOS, Android, Windows 10용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.</div>
+
+            <div class="title">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</div>
+            <div class="content"> 언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br/> <br/>iOS, Android, Windows 10용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.</div>
+
+            <div class="title">넷플릭스에서 어떤 콘텐츠를 시청할 수 있나요?</div>
+            <div class="content"> 언제 어디서나 시청할 수 있습니다. 넷플릭스 계정으로 로그인하면 PC에서 netflix.com을 통해 바로 시청할 수 있으며, 인터넷이 연결되어 있고 넷플릭스 앱을 지원하는 디바이스(스마트 TV, 스마트폰, 태블릿, 스트리밍 미디어 플레이어, 게임 콘솔 등)에서도 언제든지 시청할 수 있습니다.<br/> <br/>iOS, Android, Windows 10용 앱에서는 좋아하는 시리즈를 저장할 수도 있습니다. 저장 기능을 이용해 이동 중이나 인터넷에 연결할 수 없는 곳에서도 시청하세요. 넷플릭스는 어디서든 함께니까요.</div>
+
+        </div>
         <div class="faq_email_form">
             <p>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
             <div class="main_email_form">
